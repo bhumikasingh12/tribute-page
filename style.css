@@ -1,0 +1,657 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Barlow:wght@300;400;500;600&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: capitalize;
+  color: white;
+  background-color: #080c18;
+}
+
+#main {
+  background: url(/image/Tom_Holland.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#main::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(3, 8, 20, 0.92) 0%,
+    rgba(5, 12, 28, 0.78) 20%,
+    rgba(8, 16, 32, 0.45) 45%,
+    rgba(8, 16, 32, 0.48) 65%,
+    rgba(3, 8, 20, 0.88) 100%
+  );
+  z-index: 0;
+}
+
+/* Hero Section */
+
+nav {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px 0 40px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background: transparent;
+  background-color: transparent;
+  box-shadow: none;
+  transition: background-color 0.4s ease;
+
+}
+
+header.scrolled {
+  background-color: #080c18;
+  border-bottom: 1px solid #827e7e53;
+}
+
+#logo {
+  color: white;
+  font-weight: 800;
+}
+
+header a {
+  text-decoration: none;
+  color: rgb(176, 173, 173);
+  font-size: 15px;
+  font-weight: 100;
+  margin: 0 60px 0 7px;
+}
+
+/* Hero Section */
+
+#hero {
+  padding-left: 80px;
+  padding-top: 70px;
+  min-height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+
+#hero .hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+#hero #role {
+  color: #c42535;
+  font-weight: 200;
+  padding: 60px 0 20px 0;
+  text-transform: uppercase;
+}
+
+#hero h1 {
+  font-size: 120px;
+  text-transform: uppercase;
+  font-weight: 800;
+  width: 90px;
+}
+
+#hero #last-name {
+  color: transparent;
+  -webkit-text-stroke: 2px white;
+}
+
+#hero #bio {
+  margin-top: 28px;
+  font-family: "Crimson Pro", serif;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#bio span {
+  width: 40px;
+  height: 2px;
+  background-color: #c42535;
+}
+
+#info {
+  margin-top: 34px;
+  display: flex;
+  gap: 40px;
+  padding-top: 20px;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+#info p {
+  font-size: 14px;
+  color: rgb(176, 173, 173);
+}
+
+#info h3 {
+  font-size: 17px;
+  font-weight: 600;
+  color: #f2ede4;
+}
+
+#info span {
+  width: 1px;
+  height: 40px;
+  background-color: #827e7e;
+}
+
+/* About Section */
+
+#about {
+  background-color: #080c18;
+  padding: 140px 0 40px 60px;
+}
+
+#about .section-title {
+  padding-bottom: 40px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #aaa;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+#about .section-number {
+  font-size: 20px;
+  color: #c42535;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+#about .section-line {
+  display: block;
+  width: 40px;
+  height: 1px;
+  background-color: #c42535;
+  flex-shrink: 0;
+}
+
+#about-content {
+  display: flex;
+}
+
+#about .about-img {
+  width: 790px;
+  height: 480px;
+  background-color: #c42535;
+  background: url(image/Tom_Holland.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#about .img-text {
+  position: relative;
+  top: 420px;
+  left: 68%;
+  color: #f2ede4;
+  background-color: #c42535;
+  height: 89px;
+  width: 150px;
+  padding: 10px 0 0 12px;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+#about .born-year {
+  font-size: 40px;
+  color: #f2ede4;
+}
+
+#about-text {
+  padding-left: 150px;
+}
+
+#about-content .section-name {
+  font-size: 190px;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(204, 202, 202, 0.104);
+}
+
+#about-text h3 {
+  font-size: 40px;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+#about-text p {
+  padding-top: 20px;
+  line-height: 1.8;
+  font-family: "Crimson Pro", serif;
+  /* text-transform: lowercase; */
+}
+
+#about-text .text {
+  color: rgba(176, 173, 173, 0.373);
+}
+
+#about-content #text-box {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 30px 0 90px 0;
+}
+
+#text-box div {
+  height: 37px;
+  width: fit-content;
+  border: 1px solid rgba(128, 128, 128, 0.418);
+  padding: 10px;
+}
+/* Career Section */
+
+#career-journey {
+  background-color: #080c18;
+  padding: 140px 0 40px 60px;
+}
+
+#career-journey .section-title {
+  padding-bottom: 40px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #aaa;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+#career-journey .section-number {
+  font-size: 20px;
+  color: #c42535;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+#career-journey .section-line {
+  display: block;
+  width: 40px;
+  height: 1px;
+  background-color: #c42535;
+  flex-shrink: 0;
+}
+
+#career-journey-header {
+  display: flex;
+  justify-content: space-between;
+}
+.career-journey-heading {
+  font-size: 34px;
+}
+.career-journey-heading .bottom-heading {
+  color: #c42535;
+}
+.career-journey-header-text {
+  width: 590px;
+  padding-top: 10px;
+  font-size: 19px;
+  line-height: 1.8;
+  color: rgba(233, 233, 233, 0.816);
+}
+
+#career-journey-content {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.career-info {
+  display: grid;
+  grid-template-columns: 1fr 1px 1fr;
+  column-gap: 60px;
+  min-height: 220px;
+}
+
+#career-journey-content p {
+  width: 387px;
+}
+
+/* CENTER LINE */
+.career-info .styling {
+  grid-column: 2;
+  grid-row: 1;
+  position: relative;
+  width: 1px;
+  height: 100%;
+  background-color: #c42535;
+}
+
+/* GLOWING DOT */
+.career-info .circle {
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #c42535;
+  box-shadow:
+    0 0 10px #c42535,
+    0 0 20px rgba(196, 37, 53, 0.7);
+}
+
+.career-year {
+  color: #c42535;
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.career-details h3 {
+  font-size: 20px;
+}
+
+.career-description {
+  width: 387px;
+  margin-top: 8px;
+  font-family: "Crimson Pro", serif;
+  color: #827e7e;
+  line-height: 1.5;
+}
+
+/* 2006, 2012, 2016LEFT */
+.career-info:nth-child(odd) .career-details {
+  grid-column: 1;
+  text-align: right;
+}
+
+.career-info:nth-child(odd) .career-description {
+  margin-left: auto;
+}
+
+/* 2008, 2015, 2019 RIGHT */
+.career-info:nth-child(even) .career-details {
+  grid-column: 3;
+  text-align: left;
+}
+
+/*Work Section  */
+#work {
+  background-color: #080c18;
+  padding: 140px 30px 70px 40px;
+}
+
+#work .section-title {
+  padding-bottom: 40px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #aaa;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+#work .section-number {
+  font-size: 20px;
+  color: #c42535;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+#work .section-line {
+  display: block;
+  width: 40px;
+  height: 1px;
+  background-color: #c42535;
+  flex-shrink: 0;
+}
+
+#work-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+
+#work-header p {
+  font-family: "crimson pro", sans-serif;
+  color: #827e7e;
+}
+
+#work-header h1 {
+  font-size: 75px;
+}
+
+#work-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 30px;
+}
+
+#work-cards .card {
+  /* background-color: #c42535; */
+  width: calc(25% - 23px);
+  height: 410px;
+  padding-right: 20px;
+  margin-bottom: 40px;
+}
+
+#work-cards .card-img {
+  width: 100%;
+  height: 410px;
+  overflow: hidden;
+}
+
+#work-cards .card-img img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+#work-cards .card p {
+  color: #c42535;
+  font-family: "crimson pro", sans-serif;
+  margin-top: 10px;
+}
+
+/* Achievement Section */
+
+#achievements .section-title {
+  padding-bottom: 40px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #aaa;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+#achievements {
+  padding: 180px 0 90px 60px;
+}
+
+#achievements .section-number {
+  font-size: 20px;
+  color: #c42535;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+#achievements .section-line {
+  display: block;
+  width: 40px;
+  height: 1px;
+  background-color: #c42535;
+  flex-shrink: 0;
+}
+
+#achievements #header {
+  font-size: 40px;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+#achievements #header .second-heading {
+  color: #827e7e6e;
+}
+
+#achievements #stats {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 210px;
+  margin-top: 60px;
+  width: 95%;
+  border: 2px solid #827e7e6e;
+  background-color: #0f1528;
+  padding: 40px 90px;
+}
+
+#achievements .stat-content {
+  padding-right: 90px;
+  /* height: 100%; */
+  border-right: 1px solid #827e7e6e;
+}
+
+#achievements .stat-content:last-child {
+  border-right: none;
+}
+
+#achievements #stats h1 {
+  font-size: 78px;
+}
+
+#achievements #stats .stat-label {
+  color: #c42535;
+  font-size: 14px;
+}
+
+#awards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+  padding-right: 50px;
+}
+
+#awards .award-card {
+  height: 124px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical */
+  align-items: flex-start; /* horizontal */
+  padding-left: 60px;
+  background-color: #0f1528;
+  border: 2px solid #827e7e6a;
+}
+
+#awards .award-card p {
+  color: #827e7eaf;
+  font-family: "Crimson pro", sans-serif;
+}
+
+#quote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 140px;
+}
+
+#quote-author {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+#quote-content {
+  text-align: center;
+}
+
+#quote-content p {
+  font-family: "Crimson Pro";
+  font-size: 40px;
+  max-width: 1200px;
+  margin: 20px 0 40px 0;
+}
+
+#quote .author {
+  margin: 0;
+  color: #827e7e;
+  font-size: 13px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+#quote-author span {
+  width: 60px;
+  height: 2px;
+  background-color: #c42535;
+}
+
+#quote h1 {
+  font-size: 110px;
+  color: #c4253567;
+}
+
+footer {
+  height: 170px;
+  padding-left: 40px;
+  background: #000;
+}
+
+#footer-content {
+  padding-top: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 40px;
+}
+
+#footer-content p {
+  font-size: 19px;
+  color: #827e7e86;
+}
+
+#about,
+#career-journey,
+#work,
+#achievements{
+    border-bottom: 1px solid rgba(130, 126, 126, 0.241);
+}
+
+.animate {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.animate.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#work-cards .card:nth-child(1) {
+    transition-delay: 0.1s;
+}
+
+#work-cards .card:nth-child(2) {
+    transition-delay: 0.2s;
+}
+
+#work-cards .card:nth-child(3) {
+    transition-delay: 0.3s;
+}
+
+#work-cards .card:nth-child(4) {
+    transition-delay: 0.4s;
+}
